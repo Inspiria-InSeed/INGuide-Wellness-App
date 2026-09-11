@@ -31,8 +31,18 @@ const authenticateToken = (req, res, next) => {
             process.env.JWT_SECRET
         );
 
-        // Store user information in request
-        req.user = decoded;
+        // Keep both names supported while the controllers use req.user.id.
+        req.user = {
+            ...decoded,
+            id: decoded.id || decoded.userId,
+        };
+
+        if (!req.user.id) {
+            return res.status(401).json({
+                success: false,
+                message: "Invalid token payload"
+            });
+        }
 
         // Continue to controller
         next();
