@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#155c5d" />
+    <meta name="description" content="Roamly travel sign-in" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Authentication.css" />
+    <title>Roamly — Welcome back</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="ambient-orb orb-one"></div>
+      <div class="ambient-orb orb-two"></div>
+      <section class="experience" aria-label="Roamly sign in">
+        <a class="brand" href="#top" aria-label="Roamly home"
+          ><span class="brand-mark">R</span><span>roamly</span></a
+        >
+        <div class="landscape" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="cloud cloud-one"></div>
+          <div class="cloud cloud-two"></div>
+          <div class="birds bird-one"></div>
+          <div class="birds bird-two"></div>
+          <div class="ridge ridge-far"></div>
+          <div class="ridge ridge-mid"></div>
+          <div class="ridge ridge-near"></div>
+          <div class="pine pine-one"></div>
+          <div class="pine pine-two"></div>
+          <div class="pine pine-three"></div>
+          <div class="pine pine-four"></div>
+        </div>
+        <section class="login-panel" aria-labelledby="login-title">
+          <div class="panel-copy">
+            <h1 id="login-title">Welcome <span>👋</span></h1>
+            <p>Login to access your travelwise account</p>
+          </div>
+          <form id="login-form" novalidate>
+            <div class="field-group">
+              <label for="email">Email</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="mail@abc.com"
+                required
+              /><span class="field-error" id="email-error"></span>
+            </div>
+            <div class="field-group">
+              <label for="password">Password</label>
+              <div class="password-control">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Enter your password"
+                  minlength="6"
+                  required
+                /><button
+                  class="toggle-password"
+                  type="button"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  <svg
+                    class="eye-open"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M2.6 12s3.9-8 9.4-8 9.4 5.3 9.4 8-3.9 8-9.4 8-9.4-5.3-9.4-8Z"
+                    ></path>
+                    <circle cx="12" cy="12" r="3"></circle></svg
+                  ><svg
+                    class="eye-closed"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m3 3 18 18"></path>
+                    <path d="M10.6 10.7a2 2 0 0 0 2.7 2.7"></path>
+                    <path
+                      d="M9.9 4.2A10.9 10.9 0 0 1 12 4c5.5 0 9.4 5.3 9.4 8 0 2.7-1.5 4.6-3.7 6"
+                    ></path>
+                    <path
+                      d="M6.6 6.6C4.1 8.3 2.6 10.7 2.6 12c0 2.7 3.9 8 9.4 8 1.3 0 2.5-.3 3.6-.8"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <span class="field-error" id="password-error"></span>
+            </div>
+            <div class="form-options">
+              <label class="check-label"
+                ><input id="remember" type="checkbox" checked /><span
+                  class="custom-check"
+                  >✓</span
+                >Remember me</label
+              ><a href="#" id="forgot-password-link">Forgot password?</a>
+            </div>
+            <button class="login-button" type="submit">
+              Sign in <span>→</span>
+            </button>
+            <div class="divider"><span>or Sign in Google</span></div>
+            <button class="google-button" type="button" id="google-sign-in">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#4285F4"
+                  d="M21.8 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.5a4.7 4.7 0 0 1-2 3.1v2.5h3.2c1.9-1.8 3.1-4.4 3.1-7.4Z"
+                ></path>
+                <path
+                  fill="#34A853"
+                  d="M12 22c2.7 0 5-.9 6.7-2.4l-3.2-2.5c-.9.6-2 .9-3.5.9-2.7 0-5-1.8-5.8-4.3H2.9v2.6A10 10 0 0 0 12 22Z"
+                ></path>
+                <path
+                  fill="#FBBC05"
+                  d="M6.2 13.7a6 6 0 0 1 0-3.5V7.6H2.9a10 10 0 0 0 0 8.9l3.3-2.8Z"
+                ></path>
+                <path
+                  fill="#EA4335"
+                  d="M12 5.9c1.5 0 2.9.5 3.9 1.5l2.9-2.9A10 10 0 0 0 2.9 7.6l3.3 2.6c.8-2.5 3.1-4.3 5.8-4.3Z"
+                ></path></svg
+              >Continue with Google
+            </button>
+            <p
+              class="status-message"
+              id="status-message"
+              aria-live="polite"
+            ></p>
+          </form>
+          <p class="signup">
+            New to Roamly? <a href="signup.html">Create an account</a>
+          </p>
+        </section>
+        <!-- =========================================
+         FORGOT PASSWORD SECTION
+        ========================================= -->
+        <section
+          class="login-panel forgot-panel"
+          id="forgot-panel"
+          aria-labelledby="forgot-title"
+          hidden
+        >
+          <div class="panel-copy">
+            <h1 id="forgot-title">Forgot Password? 🔐</h1>
+
+            <p>
+              Enter your email address and we'll help you reset your password.
+            </p>
+          </div>
+
+          <form id="forgot-password-form" novalidate>
+            <div class="field-group">
+              <label for="forgot-email">Email</label>
+
+              <input
+                id="forgot-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="mail@abc.com"
+                required
+              />
+
+              <span class="field-error" id="forgot-email-error"></span>
+            </div>
+
+            <button class="login-button" type="submit">
+              Send reset link <span>→</span>
+            </button>
+
+            <p
+              class="status-message"
+              id="forgot-status-message"
+              aria-live="polite"
+            ></p>
+
+            <p class="signup">
+              Remember your password?
+              <a href="#" id="back-to-login"> Sign in </a>
+            </p>
+          </form>
+        </section>
+
+        <p class="footer-note">© 2026 Roamly <span>•</span> Find your wild</p>
+      </section>
+    </main>
+    <script src="../JS/auth-config.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="../JS/Authentication.js"></script>
+  </body>
+</html>

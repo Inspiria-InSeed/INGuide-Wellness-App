@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Details | Wellness</title>
+
+    <link rel="stylesheet" href="../CSS/professional-support.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+                <h2>Wellness</h2>
+                <span>A better mind, better you</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Mood, Journal & Progress</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-spa"></i>
+                <span>Relax & Activities</span>
+            </a>
+
+            <a href="support.html" class="active">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <span>Support & Guidance</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Wellness Resources</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" id="logoutBtn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="back-area">
+
+                <button
+                    class="back-btn"
+                    onclick="window.location.href='find-professional.html'"
+                    aria-label="Back to results"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <span>Back to Results</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </div>
+
+
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PROFESSIONAL DETAILS ================= -->
+
+        <section class="professional-details-page">
+
+
+            <!-- HEADER -->
+
+            <div class="details-header">
+
+                <div class="details-avatar" id="detailsAvatar">
+
+                    <i class="fa-solid fa-user-doctor"></i>
+
+                </div>
+
+
+                <div class="details-title">
+
+                    <div class="verified-label">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        Verified Support Provider
+
+                    </div>
+
+
+                    <h1 id="professionalName">
+                        Student Counseling Service
+                    </h1>
+
+
+                    <p id="professionalCategory">
+                        Support for academic, emotional and personal concerns.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ABOUT -->
+
+            <div class="details-card">
+
+                <h2>About</h2>
+
+                <p id="professionalAbout">
+
+                    We provide confidential and professional support for
+                    students facing academic, emotional and personal
+                    challenges. Our goal is to help students feel heard,
+                    supported and guided.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- AREAS OF SUPPORT -->
+
+            <div class="details-card">
+
+                <h2>Areas of Support</h2>
+
+
+                <div class="support-areas" id="supportAreas">
+
+                    <!-- Added dynamically -->
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SUPPORT OPTIONS -->
+
+            <div class="details-card">
+
+                <h2>Support Options</h2>
+
+
+                <div class="support-methods">
+
+
+                    <button
+                        class="support-method active"
+                        data-method="Online Support"
+                    >
+
+                        <div class="method-icon">
+
+                            <i class="fa-solid fa-laptop"></i>
+
+                        </div>
+
+
+                        <span>Online Support</span>
+
+                    </button>
+
+
+
+                    <button
+                        class="support-method"
+                        data-method="In-person Support"
+                    >
+
+                        <div class="method-icon">
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                        </div>
+
+
+                        <span>In-person Support</span>
+
+                    </button>
+
+
+
+                    <button
+                        class="support-method"
+                        data-method="Chat Support"
+                    >
+
+                        <div class="method-icon">
+
+                            <i class="fa-regular fa-message"></i>
+
+                        </div>
+
+
+                        <span>Chat Support</span>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REQUEST BUTTON -->
+
+            <button
+                class="request-support-main-btn"
+                id="detailsRequestBtn"
+            >
+
+                Request Support
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/professional-support.js"></script>
+
+</body>
+
+</html>

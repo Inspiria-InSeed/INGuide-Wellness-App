@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Request Submitted | Wellness</title>
+
+    <link
+        rel="stylesheet"
+        href="../CSS/professional-support.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app-container">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+                <h2>Wellness</h2>
+                <span>A better mind, better you</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Mood, Journal & Progress</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-spa"></i>
+                <span>Relax & Activities</span>
+            </a>
+
+            <a href="support.html" class="active">
+                <i class="fa-regular fa-hand-holding-heart"></i>
+                <span>Support & Guidance</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Wellness Resources</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" id="logoutBtn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="back-area">
+
+                <button
+                    class="back-btn"
+                    onclick="goBack()"
+                    aria-label="Go back"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <span>Professional Support</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </div>
+
+
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= SUCCESS PAGE ================= -->
+
+        <section class="request-success-page" id="requestSuccessPage">
+
+
+            <!-- SUCCESS CARD -->
+
+            <div class="success-card">
+
+
+                <!-- SUCCESS ICON -->
+
+                <div class="success-icon">
+
+                    <div class="success-check">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTENT -->
+
+                <span class="success-label">
+                    REQUEST SUBMITTED SUCCESSFULLY
+                </span>
+
+
+                <h1>
+                    Your support request has been sent
+                </h1>
+
+
+                <p class="success-description">
+
+                    Thank you for reaching out. Your request has been
+                    submitted successfully, and the support team will review
+                    your preferences.
+
+                </p>
+
+
+                <!-- REQUEST SUMMARY -->
+
+                <div class="success-request-summary">
+
+
+                    <div class="success-summary-header">
+
+                        <div>
+
+                            <h2>
+                                Request Summary
+                            </h2>
+
+                            <p>
+                                Here is what you requested.
+                            </p>
+
+                        </div>
+
+
+                        <div class="submitted-badge">
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Submitted
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROFESSIONAL -->
+
+                    <div class="success-summary-item">
+
+                        <div class="success-item-icon purple-success-icon">
+
+                            <i class="fa-solid fa-user-doctor"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Professional</span>
+
+                            <strong id="successProfessional">
+                                Support Professional
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUPPORT TYPE -->
+
+                    <div class="success-summary-item">
+
+                        <div class="success-item-icon pink-success-icon">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Support Area</span>
+
+                            <strong id="successSupportType">
+                                General Support
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="success-summary-item">
+
+                        <div class="success-item-icon green-success-icon">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Preferred Date</span>
+
+                            <strong id="successDate">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TIME -->
+
+                    <div class="success-summary-item">
+
+                        <div class="success-item-icon orange-success-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>Preferred Time</span>
+
+                            <strong id="successTime">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- NEXT STEPS -->
+
+                <div class="success-next-steps">
+
+
+                    <div class="success-next-icon">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            What happens next?
+                        </h3>
+
+
+                        <p>
+                            You will receive an update when your support
+                            request has been reviewed and your session details
+                            are confirmed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="success-actions">
+
+
+                    <a
+                        href="professional-support.html"
+                        class="success-secondary-btn"
+                    >
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Back to Support
+
+                    </a>
+
+
+                    <a
+                        href="dashboard.html"
+                        class="success-primary-btn"
+                    >
+
+                        Go to Dashboard
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/professional-support.js"></script>
+
+</body>
+
+</html>

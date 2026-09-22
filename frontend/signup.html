@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roamly — Create account</title>
+    <link rel="stylesheet" href="../CSS/Authentication.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="circle left-circle"></div>
+      <div class="circle right-circle"></div>
+
+      <section class="signup-card">
+        <div class="form-section">
+          <form id="createAccountForm">
+            <h1>Create account <span>✨</span></h1>
+            <p class="subtitle">Start your journey with Roamly</p>
+
+            <label for="fullName">Full name</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="mail@abc.com"
+              required
+            />
+
+            <label for="password">Password</label>
+            <div class="password-box">
+              <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+              />
+              <button type="button" class="show-password" data-input="password">
+                ◉
+              </button>
+            </div>
+
+            <label for="confirmPassword">Confirm password</label>
+            <div class="password-box">
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required
+              />
+              <button
+                type="button"
+                class="show-password"
+                data-input="confirmPassword"
+              >
+                ◉
+              </button>
+            </div>
+
+            <div class="terms">
+              <input type="checkbox" id="terms" required />
+              <label for="terms">
+                I agree to the <a href="#">Terms & Conditions</a>
+              </label>
+            </div>
+
+            <button type="submit" class="create-btn">Create account</button>
+
+            <div class="divider">
+              <span>or Sign up with Google</span>
+            </div>
+
+            <button type="button" class="google-btn">
+              <b>G</b> Continue with Google
+            </button>
+
+            <p class="login-link">
+              Already have an account?
+              <a href="login.html">Sign in</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="image-section">
+          <div class="sun"></div>
+
+          <div class="cloud">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="birds">⌒ ⌒</div>
+
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-middle"></div>
+          <div class="mountain mountain-front"></div>
+
+          <div class="tree tree-one"></div>
+          <div class="tree tree-two"></div>
+          <div class="tree tree-three"></div>
+
+          <p class="copyright">© 2026 Roamly &nbsp;•&nbsp; Find your wild</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../JS/auth-config.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="../JS/Authentication.js"></script>
+  </body>
+</html>

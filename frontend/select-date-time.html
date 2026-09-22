@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Select Date & Time | Wellness</title>
+
+    <link
+        rel="stylesheet"
+        href="../CSS/professional-support.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app-container">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+                <h2>Wellness</h2>
+                <span>A better mind, better you</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Mood, Journal & Progress</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-spa"></i>
+                <span>Relax & Activities</span>
+            </a>
+
+            <a href="support.html" class="active">
+                <i class="fa-regular fa-hand-holding-heart"></i>
+                <span>Support & Guidance</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Wellness Resources</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" id="logoutBtn">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <div class="back-area">
+
+                <button
+                    class="back-btn"
+                    onclick="goBack()"
+                    aria-label="Go back"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <span>Back to Support Type</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </div>
+
+
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= DATE & TIME PAGE ================= -->
+
+        <section class="date-time-page">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="request-page-heading">
+
+                <div class="heading-icon">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        Step 2 of 3
+                    </span>
+
+                    <h1>
+                        Choose a suitable date and time
+                    </h1>
+
+                    <p>
+                        Select a preferred date and an available time slot
+                        for your support session.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PROGRESS ================= -->
+
+            <div class="request-progress">
+
+
+                <div class="progress-step completed">
+
+                    <div class="progress-number">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <span>Support Type</span>
+
+                </div>
+
+
+                <div class="progress-line active-line"></div>
+
+
+                <div class="progress-step active">
+
+                    <div class="progress-number">
+                        2
+                    </div>
+
+                    <span>Date & Time</span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <div class="progress-number">
+                        3
+                    </div>
+
+                    <span>Review</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MAIN SELECTION ================= -->
+
+            <div class="date-time-container">
+
+
+                <!-- DATE SECTION -->
+
+                <div class="date-selection-card">
+
+
+                    <div class="section-card-heading">
+
+                        <div class="section-icon">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Select a Date
+                            </h2>
+
+                            <p>
+                                Choose the day that works best for you.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="date-input-wrapper">
+
+                        <label for="supportDate">
+                            Preferred Date
+                        </label>
+
+
+                        <input
+                            type="date"
+                            id="supportDate"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIME SECTION -->
+
+                <div class="time-selection-card">
+
+
+                    <div class="section-card-heading">
+
+                        <div class="section-icon purple-section-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2>
+                                Select a Time
+                            </h2>
+
+                            <p>
+                                Choose an available time slot.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MORNING -->
+
+                    <div class="time-group">
+
+                        <h3>
+                            <i class="fa-solid fa-sun"></i>
+                            Morning
+                        </h3>
+
+
+                        <div class="time-slots">
+
+                            <button
+                                class="time-slot"
+                                data-time="9:00 AM"
+                            >
+                                9:00 AM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="10:00 AM"
+                            >
+                                10:00 AM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="11:00 AM"
+                            >
+                                11:00 AM
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AFTERNOON -->
+
+                    <div class="time-group">
+
+                        <h3>
+                            <i class="fa-solid fa-cloud-sun"></i>
+                            Afternoon
+                        </h3>
+
+
+                        <div class="time-slots">
+
+                            <button
+                                class="time-slot"
+                                data-time="1:00 PM"
+                            >
+                                1:00 PM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="2:00 PM"
+                            >
+                                2:00 PM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="3:00 PM"
+                            >
+                                3:00 PM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="4:00 PM"
+                            >
+                                4:00 PM
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EVENING -->
+
+                    <div class="time-group">
+
+                        <h3>
+                            <i class="fa-solid fa-moon"></i>
+                            Evening
+                        </h3>
+
+
+                        <div class="time-slots">
+
+                            <button
+                                class="time-slot"
+                                data-time="5:00 PM"
+                            >
+                                5:00 PM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="6:00 PM"
+                            >
+                                6:00 PM
+                            </button>
+
+
+                            <button
+                                class="time-slot"
+                                data-time="7:00 PM"
+                            >
+                                7:00 PM
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SESSION NOTE ================= -->
+
+            <div class="session-note">
+
+                <div class="session-note-icon">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Your preferred time is a request.
+                    </strong>
+
+                    <p>
+                        The final appointment time may be confirmed based on
+                        the availability of the selected support professional.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ACTIONS ================= -->
+
+            <div class="date-time-actions">
+
+
+                <button
+                    class="previous-step-btn"
+                    onclick="goBack()"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back
+
+                </button>
+
+
+                <button
+                    class="continue-request-btn"
+                    id="dateTimeContinueBtn"
+                >
+
+                    Continue to Review
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/professional-support.js"></script>
+
+
+</body>
+</html>

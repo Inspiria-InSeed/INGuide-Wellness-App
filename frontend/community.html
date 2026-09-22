@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Anonymous Community | Wellness</title>
+
+    <!-- Community CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../CSS/community.css"
+    >
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+
+                <h2>Wellness</h2>
+
+                <span>A better mind, better you</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIDEBAR MENU -->
+
+        <nav class="sidebar-menu">
+
+
+            <a href="dashboard.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="dashboard.html">
+
+                <i class="fa-regular fa-face-smile"></i>
+
+                <span>Mood, Journal & Progress</span>
+
+            </a>
+
+
+            <a href="support.html">
+
+                <i class="fa-solid fa-spa"></i>
+
+                <span>Relax & Activities</span>
+
+            </a>
+
+
+            <a
+                href="support.html"
+                class="active"
+            >
+
+                <i class="fa-regular fa-hand-holding-heart"></i>
+
+                <span>Support & Guidance</span>
+
+            </a>
+
+
+            <a href="support.html">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <span>Wellness Resources</span>
+
+            </a>
+
+
+            <a href="dashboard.html">
+
+                <i class="fa-regular fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="#"
+                id="logoutBtn"
+            >
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+
+            <div class="back-area">
+
+
+                <button
+                    class="back-btn"
+                    id="backBtn"
+                    aria-label="Go back"
+                >
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+
+                <span>
+                    Back to Support & Guidance
+                </span>
+
+
+            </div>
+
+
+            <div class="topbar-right">
+
+
+                <!-- NOTIFICATION -->
+
+                <div class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="profile-avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+        <!-- ================= COMMUNITY PAGE ================= -->
+
+        <section class="community-page">
+
+
+            <!-- ================= PAGE HEADER ================= -->
+
+            <div class="community-header">
+
+
+                <div class="community-heading">
+
+
+                    <div class="community-heading-icon">
+
+                        <i class="fa-solid fa-users"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h1>
+                            Anonymous Community
+                        </h1>
+
+
+                        <p>
+                            A safe space to share, listen and support
+                            each other.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- LIVE STATUS -->
+
+                <div
+                    class="meeting-status"
+                    id="meetingStatus"
+                >
+
+
+                    <span class="status-dot"></span>
+
+
+                    <span id="meetingStatusText">
+
+                        Community Chat Active
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= LIVE SESSION BANNER ================= -->
+
+            <div
+                class="live-session-banner"
+                id="liveSessionBanner"
+            >
+
+
+                <div class="live-session-left">
+
+
+                    <div class="live-icon">
+
+                        <i class="fa-solid fa-video"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span class="live-label">
+
+                            LIVE SESSION
+
+                        </span>
+
+
+                        <h3>
+
+                            Managing Academic Stress
+
+                        </h3>
+
+
+                        <p>
+
+                            Join the counselor-led community
+                            discussion happening now.
+
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="live-session-right">
+
+
+                    <div class="live-participants">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            42 joined
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="join-live-btn"
+                        id="joinLiveBtn"
+                    >
+
+                        Join Session
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= COMMUNITY LAYOUT ================= -->
+
+            <div class="community-layout">
+
+
+                <!-- ================= LEFT COMMUNITY NAV ================= -->
+
+                <aside class="community-navigation">
+
+
+                    <div class="community-nav-title">
+
+                        <i class="fa-solid fa-leaf"></i>
+
+                        <span>
+                            Community
+                        </span>
+
+                    </div>
+
+
+                    <!-- PUBLIC CHAT -->
+
+                    <button
+                        class="community-nav-item active"
+                        data-section="public"
+                    >
+
+                        <div>
+
+                            <i class="fa-solid fa-globe"></i>
+
+                            <span>
+                                Public Chat
+                            </span>
+
+                        </div>
+
+
+                        <span
+                            class="unread-badge"
+                            id="publicUnread"
+                        >
+                            3
+                        </span>
+
+
+                    </button>
+
+
+                    <!-- PRIVATE CHAT -->
+
+                    <button
+                        class="community-nav-item"
+                        data-section="private"
+                    >
+
+                        <div>
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <span>
+                                Private Messages
+                            </span>
+
+                        </div>
+
+
+                        <span
+                            class="unread-badge hidden"
+                            id="privateUnread"
+                        >
+                            0
+                        </span>
+
+
+                    </button>
+
+
+                    <!-- Q&A -->
+
+                    <button
+                        class="community-nav-item"
+                        data-section="questions"
+                    >
+
+                        <div>
+
+                            <i class="fa-regular fa-circle-question"></i>
+
+                            <span>
+                                Questions & Answers
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- UPCOMING -->
+
+                    <button
+                        class="community-nav-item"
+                        data-section="sessions"
+                    >
+
+                        <div>
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span>
+                                Upcoming Sessions
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- GUIDELINES -->
+
+                    <button
+                        class="community-nav-item"
+                        data-section="guidelines"
+                    >
+
+                        <div>
+
+                            <i class="fa-solid fa-shield-heart"></i>
+
+                            <span>
+                                Community Guidelines
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                    <!-- ANONYMOUS ID -->
+
+                    <div class="anonymous-user-card">
+
+
+                        <div class="anonymous-avatar">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                You are chatting as
+                            </span>
+
+
+                            <strong
+                                id="anonymousUserName"
+                            >
+                                Anonymous Student
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </aside>
+
+
+                <!-- ================= MAIN CHAT ================= -->
+
+                <section class="community-chat-area">
+
+
+                    <!-- CHAT HEADER -->
+
+                    <div class="chat-header">
+
+
+                        <div>
+
+
+                            <h2 id="chatTitle">
+
+                                Public Community Chat
+
+                            </h2>
+
+
+                            <p id="chatDescription">
+
+                                Share your thoughts and support
+                                other students anonymously.
+
+                            </p>
+
+
+                        </div>
+
+
+                        <div class="online-indicator">
+
+                            <span></span>
+
+                            <span>
+                                24 online
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- CHAT CONTENT -->
+
+                    <div
+                        class="chat-content"
+                        id="chatContent"
+                    >
+
+
+                        <!-- WELCOME MESSAGE -->
+
+                        <div class="community-welcome">
+
+
+                            <div class="welcome-icon">
+
+                                <i class="fa-solid fa-heart"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <h3>
+                                    Welcome to the Community
+                                </h3>
+
+
+                                <p>
+                                    This is a safe and supportive
+                                    space. Please be kind and
+                                    respectful to others.
+                                </p>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- MESSAGE 1 -->
+
+                        <div
+                            class="community-message"
+                            data-message-id="1"
+                        >
+
+
+                            <div class="message-avatar avatar-purple">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+
+                            <div class="message-body">
+
+
+                                <div class="message-user-info">
+
+                                    <strong>
+                                        Anonymous Student #24
+                                    </strong>
+
+
+                                    <span>
+                                        2 min ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="message-bubble">
+
+                                    I've been feeling a little stressed
+                                    about my upcoming exams. Does anyone
+                                    have any tips for managing it?
+
+                                </div>
+
+
+                                <div class="message-actions">
+
+
+                                    <button
+                                        class="reaction-btn"
+                                        data-reaction="heart"
+                                    >
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                        <span>4</span>
+
+                                    </button>
+
+
+                                    <button
+                                        class="reaction-btn"
+                                        data-reaction="like"
+                                    >
+
+                                        <i class="fa-regular fa-thumbs-up"></i>
+
+                                        <span>2</span>
+
+                                    </button>
+
+
+                                    <button
+                                        class="reply-btn"
+                                    >
+
+                                        <i class="fa-regular fa-comment"></i>
+
+                                        Reply
+
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- MESSAGE 2 -->
+
+                        <div
+                            class="community-message"
+                            data-message-id="2"
+                        >
+
+
+                            <div class="message-avatar avatar-green">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+
+                            <div class="message-body">
+
+
+                                <div class="message-user-info">
+
+                                    <strong>
+                                        Wellness Friend #52
+                                    </strong>
+
+
+                                    <span>
+                                        5 min ago
+                                    </span>
+
+                                </div>
+
+
+                                <div class="message-bubble">
+
+                                    Taking small breaks really helps me.
+                                    I usually do a few breathing exercises
+                                    when I start feeling overwhelmed.
+
+                                </div>
+
+
+                                <div class="message-actions">
+
+
+                                    <button class="reaction-btn">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                        <span>8</span>
+
+                                    </button>
+
+
+                                    <button class="reaction-btn">
+
+                                        <i class="fa-regular fa-thumbs-up"></i>
+
+                                        <span>5</span>
+
+                                    </button>
+
+
+                                    <button class="reply-btn">
+
+                                        <i class="fa-regular fa-comment"></i>
+
+                                        Reply
+
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- CURRENT USER MESSAGE -->
+
+                        <div
+                            class="community-message own-message"
+                            data-message-id="3"
+                        >
+
+
+                            <div class="message-body">
+
+
+                                <div class="message-user-info">
+
+                                    <strong>
+                                        You
+                                    </strong>
+
+
+                                    <span>
+                                        Just now
+                                    </span>
+
+                                </div>
+
+
+                                <div class="message-bubble">
+
+                                    I think taking things one step at a
+                                    time can make a big difference. 😊
+
+                                </div>
+
+
+                                <div class="message-actions">
+
+
+                                    <button class="reaction-btn">
+
+                                        <i class="fa-regular fa-heart"></i>
+
+                                        <span>3</span>
+
+                                    </button>
+
+
+                                    <button class="reply-btn">
+
+                                        <i class="fa-solid fa-pen"></i>
+
+                                        Edit
+
+                                    </button>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- CHAT INPUT -->
+
+                    <div class="chat-input-area">
+
+
+                        <div class="posting-as">
+
+                            <i class="fa-solid fa-mask"></i>
+
+                            Posting anonymously as
+
+                            <strong
+                                id="postingAsName"
+                            >
+                                Anonymous Student
+                            </strong>
+
+                        </div>
+
+
+                        <div class="chat-input-wrapper">
+
+
+                            <button
+                                class="emoji-btn"
+                                id="emojiBtn"
+                                aria-label="Add emoji"
+                            >
+
+                                <i class="fa-regular fa-face-smile"></i>
+
+                            </button>
+
+
+                            <input
+                                type="text"
+                                id="chatInput"
+                                placeholder="Share something with the community..."
+                                maxlength="500"
+                            >
+
+
+                            <button
+                                class="send-message-btn"
+                                id="sendMessageBtn"
+                                aria-label="Send message"
+                            >
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- ================= RIGHT SIDEBAR ================= -->
+
+                <aside class="community-right-panel">
+
+
+                    <!-- ONLINE MEMBERS -->
+
+                    <div class="community-info-card">
+
+
+                        <div class="info-card-header">
+
+
+                            <div>
+
+                                <h3>
+                                    Community Members
+                                </h3>
+
+
+                                <span>
+
+                                    <i class="fa-solid fa-circle"></i>
+
+                                    24 members online
+
+                                </span>
+
+
+                            </div>
+
+
+                            <button
+                                class="view-all-btn"
+                                id="viewMembersBtn"
+                            >
+                                View All
+                            </button>
+
+
+                        </div>
+
+
+                        <!-- MEMBER -->
+
+                        <div
+                            class="community-member"
+                            data-member="Anonymous Student #24"
+                        >
+
+
+                            <div class="member-avatar avatar-purple">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+
+                            <div class="member-info">
+
+                                <strong>
+                                    Anonymous Student #24
+                                </strong>
+
+                                <span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    Online
+                                </span>
+
+                            </div>
+
+
+                            <button
+                                class="message-member-btn"
+                                title="Send private message"
+                            >
+
+                                <i class="fa-regular fa-message"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                        <!-- MEMBER -->
+
+                        <div
+                            class="community-member"
+                            data-member="Wellness Friend #52"
+                        >
+
+
+                            <div class="member-avatar avatar-green">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+
+                            <div class="member-info">
+
+                                <strong>
+                                    Wellness Friend #52
+                                </strong>
+
+                                <span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    Online
+                                </span>
+
+                            </div>
+
+
+                            <button
+                                class="message-member-btn"
+                                title="Send private message"
+                            >
+
+                                <i class="fa-regular fa-message"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                        <!-- MEMBER -->
+
+                        <div
+                            class="community-member"
+                            data-member="Student #458"
+                        >
+
+
+                            <div class="member-avatar avatar-blue">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+
+                            <div class="member-info">
+
+                                <strong>
+                                    Student #458
+                                </strong>
+
+                                <span>
+                                    <i class="fa-solid fa-circle"></i>
+                                    Online
+                                </span>
+
+                            </div>
+
+
+                            <button
+                                class="message-member-btn"
+                                title="Send private message"
+                            >
+
+                                <i class="fa-regular fa-message"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- UPCOMING SESSION -->
+
+                    <div class="upcoming-session-card">
+
+
+                        <div class="session-card-top">
+
+
+                            <div class="session-icon">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                            </div>
+
+
+                            <span>
+                                UPCOMING SESSION
+                            </span>
+
+
+                        </div>
+
+
+                        <h3>
+                            Managing Academic Stress
+                        </h3>
+
+
+                        <p>
+                            Join a supportive discussion led by
+                            a wellness counselor.
+                        </p>
+
+
+                        <div class="session-details">
+
+
+                            <div>
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Tomorrow
+
+                            </div>
+
+
+                            <div>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                6:00 PM
+
+                            </div>
+
+
+                        </div>
+
+
+                        <button
+                            class="session-details-btn"
+                            id="sessionDetailsBtn"
+                        >
+
+                            View Session
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <!-- COMMUNITY REMINDER -->
+
+                    <div class="community-reminder-card">
+
+
+                        <div class="reminder-icon">
+
+                            <i class="fa-solid fa-seedling"></i>
+
+                        </div>
+
+
+                        <div>
+
+
+                            <h3>
+                                A Safe Community
+                            </h3>
+
+
+                            <p>
+                                Be kind, respectful and avoid sharing
+                                personal information.
+                            </p>
+
+
+                            <button
+                                id="guidelinesBtn"
+                            >
+
+                                Community Guidelines
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div
+    class="community-toast"
+    id="communityToast"
+>
+    <i class="fa-solid fa-check"></i>
+
+    <span id="toastMessage">
+        Action completed successfully.
+    </span>
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/community.js"></script>
+
+
+</body>
+
+</html>

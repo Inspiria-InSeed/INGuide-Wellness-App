@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Find Professional Support | Wellness</title>
+
+    <link rel="stylesheet" href="../CSS/professional-support.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app-container">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+
+                <h2>Wellness</h2>
+
+                <span>A better mind, better you</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Mood, Journal & Progress</span>
+            </a>
+
+
+            <a href="support.html">
+                <i class="fa-solid fa-spa"></i>
+                <span>Relax & Activities</span>
+            </a>
+
+
+            <a href="support.html" class="active">
+                <i class="fa-regular fa-hand-holding-heart"></i>
+                <span>Support & Guidance</span>
+            </a>
+
+
+            <a href="support.html">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Wellness Resources</span>
+            </a>
+
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <div class="back-area">
+
+                <button class="back-btn" onclick="goBack()">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+                <span>Back</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">3</span>
+
+                </div>
+
+
+                <div class="profile-avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <section class="find-professional-page">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="find-page-heading">
+
+                <h1>Find Professional Support</h1>
+
+                <p>
+                    Explore verified support options available to you.
+                </p>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="professional-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="professionalSearch"
+                    placeholder="Search support type or service..."
+                >
+
+            </div>
+
+
+
+            <!-- FILTERS -->
+
+            <div class="filter-container">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="stress">
+                    Stress
+                </button>
+
+                <button class="filter-btn" data-filter="sleep">
+                    Sleep
+                </button>
+
+                <button class="filter-btn" data-filter="academic">
+                    Academic
+                </button>
+
+                <button class="filter-btn" data-filter="anxiety">
+                    Anxiety
+                </button>
+
+                <button class="filter-btn" data-filter="other">
+                    Other
+                </button>
+
+            </div>
+
+
+
+            <!-- PROFESSIONAL LIST -->
+
+            <div
+                class="professional-list"
+                id="professionalList"
+            >
+
+
+                <!-- Card 1 -->
+
+                <article
+                    class="professional-card"
+                    data-category="stress academic anxiety"
+                    data-name="Student Counseling Service"
+                >
+
+                    <div class="professional-avatar avatar-one">
+
+                        <i class="fa-solid fa-user-doctor"></i>
+
+                    </div>
+
+
+                    <div class="professional-info">
+
+                        <h3>Student Counseling Service</h3>
+
+                        <p>
+                            Support for students facing academic, emotional
+                            and personal challenges.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span>Stress</span>
+                            <span>Anxiety</span>
+                            <span>Academic</span>
+
+                        </div>
+
+
+                        <div class="availability">
+
+                            <span>
+                                <i class="fa-solid fa-circle"></i>
+                                Online
+                            </span>
+
+                            <span>•</span>
+
+                            <span>In-person</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="view-details-btn"
+                        onclick="selectProfessional(
+                            'Student Counseling Service',
+                            'Stress, Anxiety, Academic',
+                            'Online & In-person'
+                        )"
+                    >
+
+                        View Details
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- Card 2 -->
+
+                <article
+                    class="professional-card"
+                    data-category="stress sleep anxiety"
+                    data-name="Wellness Support Center"
+                >
+
+                    <div class="professional-avatar avatar-two">
+
+                        <i class="fa-solid fa-heart-pulse"></i>
+
+                    </div>
+
+
+                    <div class="professional-info">
+
+                        <h3>Wellness Support Center</h3>
+
+                        <p>
+                            Personalized support for stress, anxiety,
+                            sleep and emotional well-being.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span>Stress</span>
+                            <span>Anxiety</span>
+                            <span>Sleep</span>
+
+                        </div>
+
+
+                        <div class="availability">
+
+                            <span>
+                                <i class="fa-solid fa-circle"></i>
+                                Online
+                            </span>
+
+                            <span>•</span>
+
+                            <span>Chat Support</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="view-details-btn"
+                        onclick="selectProfessional(
+                            'Wellness Support Center',
+                            'Stress, Anxiety, Sleep',
+                            'Online & Chat Support'
+                        )"
+                    >
+
+                        View Details
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- Card 3 -->
+
+                <article
+                    class="professional-card"
+                    data-category="academic stress other"
+                    data-name="Career and Future Guidance"
+                >
+
+                    <div class="professional-avatar avatar-three">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                    </div>
+
+
+                    <div class="professional-info">
+
+                        <h3>Career & Future Guidance</h3>
+
+                        <p>
+                            Support for career planning, future concerns
+                            and personal growth.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span>Career</span>
+                            <span>Guidance</span>
+                            <span>Growth</span>
+
+                        </div>
+
+
+                        <div class="availability">
+
+                            <span>
+                                <i class="fa-solid fa-circle"></i>
+                                Online
+                            </span>
+
+                            <span>•</span>
+
+                            <span>Appointment</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="view-details-btn"
+                        onclick="selectProfessional(
+                            'Career & Future Guidance',
+                            'Career, Future, Personal Growth',
+                            'Online Appointment'
+                        )"
+                    >
+
+                        View Details
+
+                    </button>
+
+                </article>
+
+
+
+                <!-- Card 4 -->
+
+                <article
+                    class="professional-card"
+                    data-category="sleep stress"
+                    data-name="Sleep and Wellness Clinic"
+                >
+
+                    <div class="professional-avatar avatar-four">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </div>
+
+
+                    <div class="professional-info">
+
+                        <h3>Sleep & Wellness Clinic</h3>
+
+                        <p>
+                            Professional guidance for improving sleep
+                            habits and daily wellness.
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span>Sleep</span>
+                            <span>Wellness</span>
+                            <span>Stress</span>
+
+                        </div>
+
+
+                        <div class="availability">
+
+                            <span>
+                                <i class="fa-solid fa-circle"></i>
+                                Available
+                            </span>
+
+                            <span>•</span>
+
+                            <span>Online</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="view-details-btn"
+                        onclick="selectProfessional(
+                            'Sleep & Wellness Clinic',
+                            'Sleep, Wellness, Stress',
+                            'Online Support'
+                        )"
+                    >
+
+                        View Details
+
+                    </button>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+
+                <i class="fa-regular fa-face-sad-tear"></i>
+
+                <h3>No professionals found</h3>
+
+                <p>
+                    Try changing your search or selecting another category.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/professional-support.js"></script>
+
+</body>
+
+</html>

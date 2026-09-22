@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wellness Resources</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="../CSS/wellness-resources.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     MAIN LAYOUT
+===================================================== -->
+
+<div class="app-container">
+
+
+    <!-- =================================================
+         LEFT SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="brand">
+
+            <div class="brand-logo">
+
+                <span class="petal petal-1"></span>
+                <span class="petal petal-2"></span>
+                <span class="petal petal-3"></span>
+                <span class="petal petal-4"></span>
+                <span class="petal petal-5"></span>
+
+            </div>
+
+            <div class="brand-text">
+
+                <h2>Wellness</h2>
+
+                <p>
+                    Better mind, better you
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="smile"></i>
+
+                <span>
+                    Mood, Journal &<br>
+                    Progress
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="flower-2"></i>
+
+                <span>
+                    Relax & Activities
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="heart-handshake"></i>
+
+                <span>
+                    Support & Guidance
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item active">
+
+                <i data-lucide="book-open"></i>
+
+                <span>
+                    Wellness Resources
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="user-round"></i>
+
+                <span>
+                    Reminders & Habits
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+                <i data-lucide="user"></i>
+
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM CARD -->
+
+        <div class="sidebar-bottom">
+
+
+            <div class="care-card">
+
+                <div class="care-text">
+
+                    <p>
+                        Take care of
+                        <br>
+                        your mind
+                        <br>
+                        and body.
+                    </p>
+
+                    <span class="small-heart">
+                        ♥
+                    </span>
+
+                </div>
+
+
+                <div class="plant">
+
+                    <div class="stem"></div>
+
+                    <div class="leaf leaf-left"></div>
+
+                    <div class="leaf leaf-right"></div>
+
+                    <div class="leaf leaf-top"></div>
+
+                    <div class="pot"></div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#" class="logout">
+
+                <i data-lucide="log-out"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOP HEADER
+        ================================================== -->
+
+        <header class="top-header">
+
+
+            <div class="page-title">
+
+                <h1>
+                    Wellness Resources
+                </h1>
+
+                <p>
+                    Helpful guides, tips, and tools to support your mental well-being.
+                </p>
+
+            </div>
+
+
+            <div class="header-right">
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="resourceSearch"
+                        placeholder="Search resources..."
+                    >
+
+                    <i data-lucide="search"></i>
+
+                </div>
+
+
+                <!-- NOTIFICATION -->
+
+                <button class="notification-btn">
+
+                    <i data-lucide="bell"></i>
+
+                    <span>
+                        3
+                    </span>
+
+                </button>
+
+
+                <!-- PROFILE -->
+
+                <div class="profile-area">
+
+                    <div class="avatar">
+                        👨🏻‍💻
+                    </div>
+
+                    <strong>
+                        Kishore
+                    </strong>
+
+                    <i data-lucide="chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             CATEGORY BAR
+        ================================================== -->
+
+        <div class="content-area">
+
+
+            <section class="resources-section">
+
+
+                <div class="category-row">
+
+
+                    <div class="categories">
+
+
+                        <button class="category active" data-category="all">
+
+                            <i data-lucide="grid-2x2"></i>
+
+                            All Resources
+
+                        </button>
+
+
+                        <button class="category" data-category="selfcare">
+
+                            <i data-lucide="heart"></i>
+
+                            Self Care
+
+                        </button>
+
+
+                        <button class="category" data-category="stress">
+
+                            <i data-lucide="leaf"></i>
+
+                            Stress Relief
+
+                        </button>
+
+
+                        <button class="category" data-category="sleep">
+
+                            <i data-lucide="moon"></i>
+
+                            Sleep
+
+                        </button>
+
+
+                        <button class="category" data-category="study">
+
+                            <i data-lucide="graduation-cap"></i>
+
+                            Study & Focus
+
+                        </button>
+
+
+                        <button class="category" data-category="relationships">
+
+                            <i data-lucide="users"></i>
+
+                            Relationships
+
+                        </button>
+
+
+                        <button class="category" data-category="motivation">
+
+                            <i data-lucide="star"></i>
+
+                            Motivation
+
+                        </button>
+
+
+                    </div>
+
+
+                    <button class="sort-button">
+
+                        Most Recent
+
+                        <i data-lucide="chevron-down"></i>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     WELCOME BANNER
+                ================================================== -->
+
+                <div class="welcome-banner">
+
+
+                    <div class="sticky-small">
+
+                        <div class="sticky-face">
+                            🙂
+                        </div>
+
+                    </div>
+
+
+                    <div class="welcome-content">
+
+                        <h2>
+                            Welcome to your resource board!
+                        </h2>
+
+                        <p>
+                            Explore helpful articles, guides and tools.
+                        </p>
+
+                        <p>
+                            Click on any note to read more.
+                        </p>
+
+                    </div>
+
+
+                    <div class="welcome-quote">
+
+                        <p>
+                            Small steps
+                            <br>
+                            every day lead to
+                            <br>
+                            big changes.
+                        </p>
+
+                        <span>
+                            ♥
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RESOURCE GRID
+                ================================================== -->
+
+                <div class="resource-grid" id="resourceGrid">
+
+
+                    <!-- CARD 1 -->
+
+                    <article
+                        class="resource-card yellow"
+                        data-category="stress"
+                        data-title="Managing Stress"
+                        data-date="2026-09-06"
+                        data-popularity="95"
+                        data-recommended="90"
+                    >
+                        <div class="tape yellow-tape"></div>
+
+                        <div class="card-icon">
+                            ☼
+                        </div>
+
+                        <h3>
+                            Managing
+                            <br>
+                            Stress
+                        </h3>
+
+                        <p>
+                            Simple ways to manage stress and find calm in your daily life.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 2 -->
+
+                    <article
+                        class="resource-card green"
+                        data-category="sleep"
+                        data-title="Better Sleep Tips"
+                        data-date="2026-09-05"
+                        data-popularity="92"
+                        data-recommended="98"
+                    >
+
+                        <div class="tape green-tape"></div>
+
+                        <div class="card-icon sleep-icon">
+                            Z<sup>z</sup>Z
+                        </div>
+
+                        <h3>
+                            Better
+                            <br>
+                            Sleep Tips
+                        </h3>
+
+                        <p>
+                            Build healthy sleep habits and improve the quality of your rest.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 3 -->
+
+                    <article
+                        class="resource-card pink"
+                        data-category="selfcare"
+                        data-title="Self Love Matters"
+                        data-date="2026-09-04"
+                        data-popularity="88"
+                        data-recommended="95"
+                    >
+
+                        <div class="tape pink-tape"></div>
+
+                        <div class="card-icon heart-icon">
+                            ♡
+                        </div>
+
+                        <h3>
+                            Self Love
+                            <br>
+                            Matters
+                        </h3>
+
+                        <p>
+                            Learn how to be kind to yourself and build self-confidence.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 4 -->
+
+                    <article
+                        class="resource-card blue"
+                        data-category="stress"
+                        data-title="Anxiety Relief"
+                        data-date="2026-09-03"
+                        data-popularity="94"
+                        data-recommended="96"
+                    >
+
+                        <div class="tape blue-tape"></div>
+
+                        <div class="card-icon">
+                            ☁
+                        </div>
+
+                        <h3>
+                            Anxiety
+                            <br>
+                            Relief
+                        </h3>
+
+                        <p>
+                            Practical techniques to reduce anxiety and feel more in control.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 5 -->
+
+                    <article
+                        class="resource-card purple"
+                        data-category="study"
+                        data-title="Study Smart Not Hard"
+                        data-date="2026-09-02"
+                        data-popularity="90"
+                        data-recommended="91"
+                    >
+
+                        <div class="tape purple-tape"></div>
+
+                        <div class="card-icon star-icon">
+                            ☆
+                        </div>
+
+                        <h3>
+                            Study Smart,
+                            <br>
+                            Not Hard
+                        </h3>
+
+                        <p>
+                            Boost your productivity and focus with smart study strategies.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 6 -->
+
+                    <article
+                        class="resource-card orange"
+                        data-category="selfcare"
+                        data-title="Mindfulness Basics"
+                        data-date="2026-09-01"
+                        data-popularity="86"
+                        data-recommended="94"
+                    >
+
+                        <div class="tape orange-tape"></div>
+
+                        <div class="card-icon">
+                            ♧
+                        </div>
+
+                        <h3>
+                            Mindfulness
+                            <br>
+                            Basics
+                        </h3>
+
+                        <p>
+                            Discover mindfulness exercises for a more peaceful mind.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 7 -->
+
+                    <article
+                        class="resource-card teal"
+                        data-category="relationships"
+                        data-title="Build Healthy Relationships"
+                        data-date="2026-08-30"
+                        data-popularity="84"
+                        data-recommended="89"
+                    >
+
+                        <div class="tape teal-tape"></div>
+
+                        <div class="card-icon">
+                            ♧
+                        </div>
+
+                        <h3>
+                            Build Healthy
+                            <br>
+                            Relationships
+                        </h3>
+
+                        <p>
+                            Tips to build stronger connections and communicate better.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+
+                    <!-- CARD 8 -->
+
+                    <article
+                        class="resource-card yellow"
+                        data-category="motivation"
+                        data-title="Stay Motivated"
+                        data-date="2026-08-29"
+                        data-popularity="91"
+                        data-recommended="93"
+                    >
+
+                        <div class="tape yellow-tape"></div>
+
+                        <div class="card-icon star-icon">
+                            ☆
+                        </div>
+
+                        <h3>
+                            Stay
+                            <br>
+                            Motivated
+                        </h3>
+
+                        <p>
+                            Stay inspired and consistent on your wellness journey.
+                        </p>
+
+                        <button class="read-more">
+                            Read More
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+
+                <div class="no-results" id="noResults">
+
+                    <i data-lucide="search-x"></i>
+
+                    <h3>
+                        No resources found
+                    </h3>
+
+                    <p>
+                        Try another search or category.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RIGHT SIDEBAR
+            ================================================== -->
+
+            <aside class="right-sidebar">
+
+
+<!-- =====================================================
+     MY NOTES
+===================================================== -->
+
+<div class="side-card notes-card">
+
+    <div class="side-title">
+
+        <h3>
+
+            <i data-lucide="pin"></i>
+
+            My Notes
+
+        </h3>
+
+    </div>
+
+
+    <!-- IMPORTANT FOR ME -->
+
+    <button
+        class="note-row"
+        data-note-category="important">
+
+        <div class="note-symbol yellow-symbol">
+            📒
+        </div>
+
+        <span>
+            Important for me
+        </span>
+
+        <b id="importantCount">
+            0
+        </b>
+
+    </button>
+
+
+    <!-- TO READ LATER -->
+
+    <button
+        class="note-row"
+        data-note-category="later">
+
+        <div class="note-symbol yellow-symbol">
+            📒
+        </div>
+
+        <span>
+            To read later
+        </span>
+
+        <b id="laterCount">
+            0
+        </b>
+
+    </button>
+
+
+    <!-- FAVORITES -->
+
+    <button
+        class="note-row"
+        data-note-category="favorites">
+
+        <div class="note-symbol blue-symbol">
+            📘
+        </div>
+
+        <span>
+            Favorites
+        </span>
+
+        <b id="favoriteCount">
+            0
+        </b>
+
+    </button>
+
+
+    <!-- PERSONAL GROWTH -->
+
+    <button
+        class="note-row"
+        data-note-category="growth">
+
+        <div class="note-symbol pink-symbol">
+            📕
+        </div>
+
+        <span>
+            Personal growth
+        </span>
+
+        <b id="growthCount">
+            0
+        </b>
+
+    </button>
+
+
+    <!-- VIEW ALL NOTES -->
+
+    <button
+        class="view-notes"
+        id="viewAllNotes">
+
+        View all notes
+
+        <i data-lucide="arrow-right"></i>
+
+    </button>
+
+</div>
+
+
+
+                <!-- ADD NOTE -->
+
+                <div class="side-card add-note-card">
+
+                    <h3>
+
+                        <i data-lucide="pen-line"></i>
+
+                        Write Your Own Note
+
+                    </h3>
+
+                    <p>
+                        Add your thoughts, reminders or reflections.
+                    </p>
+
+                    <button id="addNoteButton">
+
+                        <span>
+                            +
+                        </span>
+
+                        Add Note
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- DAILY REMINDER -->
+
+                <div class="side-card reminder-card">
+
+                    <h3>
+
+                        <i data-lucide="lightbulb"></i>
+
+                        Daily Reminder
+
+                    </h3>
+
+
+                    <div class="reminder-note">
+
+                        <div class="reminder-tape"></div>
+
+                        <p>
+                            You don't have to be
+                            <br>
+                            perfect to make
+                            <br>
+                            progress.
+                        </p>
+
+                        <span>
+                            ♥
+                        </span>
+
+                        <strong>
+                            Keep going!
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- =====================================================
+     ADD NOTE MODAL
+===================================================== -->
+
+<div class="modal-overlay" id="noteModal">
+
+
+    <div class="note-modal">
+
+
+        <button class="close-modal" id="closeModal">
+            ×
+        </button>
+
+
+        <div class="modal-icon">
+            📝
+        </div>
+
+
+        <h2>
+            Write Your Own Note
+        </h2>
+
+
+        <p>
+            Write something you want to remember.
+        </p>
+
+
+        <input
+    type="text"
+    id="noteTitle"
+    placeholder="Note title"
+>
+
+
+<select id="noteCategory">
+
+    <option value="important">
+        Important for me
+    </option>
+
+    <option value="later">
+        To read later
+    </option>
+
+    <option value="favorites">
+        Favorites
+    </option>
+
+    <option value="growth">
+        Personal growth
+    </option>
+
+</select>
+
+
+<textarea
+    id="noteText"
+    placeholder="Write your thoughts..."
+></textarea>
+
+
+        <button class="save-note" id="saveNote">
+            Save Note
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/wellness-resources.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Professional Support | Wellness</title>
+
+    <link rel="stylesheet" href="../CSS/professional-support.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div>
+                <h2>Wellness</h2>
+                <span>A better mind, better you</span>
+            </div>
+        </div>
+
+
+        <nav class="sidebar-menu">
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Mood, Journal & Progress</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-spa"></i>
+                <span>Relax & Activities</span>
+            </a>
+
+            <a href="support.html" class="active">
+                <i class="fa-regular fa-hand-holding-heart"></i>
+                <span>Support & Guidance</span>
+            </a>
+
+            <a href="support.html">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Wellness Resources</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" id="logoutBtn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOP BAR ================= -->
+
+        <header class="topbar">
+
+            <div class="back-area">
+
+                <button
+                    class="back-btn"
+                    onclick="goBack()"
+                    aria-label="Go back"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <span>Back to Support & Guidance</span>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+
+
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PROFESSIONAL SUPPORT ================= -->
+
+        <section class="professional-support-page">
+
+
+            <div class="page-heading">
+
+                <div class="heading-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+
+                <div>
+                    <h1>Professional Support</h1>
+
+                    <p>
+                        Find the right support when you need someone to talk to.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- INFO BOX -->
+
+            <div class="info-banner">
+
+                <div class="info-icon">
+                    <i class="fa-solid fa-shield-heart"></i>
+                </div>
+
+                <div>
+
+                    <strong>
+                        Sometimes speaking with a qualified professional
+                        can make a big difference.
+                    </strong>
+
+                    <p>
+                        Explore available support options or send a request
+                        based on what works best for you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUPPORT OPTIONS -->
+
+            <section class="support-choice-section">
+
+                <h2>How would you like to get support?</h2>
+
+
+                <div class="support-options">
+
+
+                    <!-- FIND PROFESSIONAL -->
+
+                    <div class="support-option-card">
+
+                        <div class="option-icon purple-icon">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+
+
+                        <h3>Find a Professional</h3>
+
+                        <p>
+                            Explore available support professionals and
+                            find someone who matches your needs.
+                        </p>
+
+
+                        <button
+                            class="primary-btn"
+                            onclick="window.location.href='find-professional.html'"
+                        >
+                            Explore
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- REQUEST SUPPORT -->
+
+                    <div class="support-option-card">
+
+                        <div class="option-icon blue-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+
+                        <h3>Request Support</h3>
+
+                        <p>
+                            Tell us what kind of support you need and choose
+                            a suitable time.
+                        </p>
+
+
+                        <button
+                            class="secondary-btn"
+                            id="requestSupportBtn"
+                        >
+                            Request
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- RECOMMENDATION -->
+
+            <section class="recommendation-section">
+
+                <h2>Recommended for You</h2>
+
+
+                <div class="recommendation-card">
+
+                    <div class="recommendation-icon">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+
+
+                    <div class="recommendation-content">
+
+                        <span>Based on your focus: <strong>Better Sleep</strong></span>
+
+                        <h3>
+                            If sleep problems are affecting your daily life,
+                            consider talking to a professional.
+                        </h3>
+
+
+                        <button
+                            class="text-btn"
+                            onclick="window.location.href='find-professional.html?filter=sleep'"
+                        >
+                            Explore Support
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="recommendation-decoration">
+                        <i class="fa-solid fa-moon"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- OTHER SUPPORT -->
+
+            <section class="other-support-section">
+
+                <h2>Other Ways to Support Yourself</h2>
+
+
+                <div class="other-support-grid">
+
+
+                    <div class="small-support-card">
+
+                        <div class="small-icon blue-small">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>Talk to Assistant</h4>
+
+                            <p>Get instant guidance anytime.</p>
+
+                            <a href="support.html">
+                                Chat Now
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="small-support-card">
+
+                        <div class="small-icon green-small">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>Write in Journal</h4>
+
+                            <p>Express your thoughts and feelings.</p>
+
+                            <a href="support.html">
+                                Write Now
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="small-support-card">
+
+                        <div class="small-icon pink-small">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+
+                        <div>
+
+                            <h4>Try Relaxation</h4>
+
+                            <p>Take a short break and relax.</p>
+
+                            <a href="support.html">
+                                Start Now
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../JS/navigation.js"></script>
+<script src="../JS/professional-support.js"></script>
+
+</body>
+</html>

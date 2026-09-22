@@ -339,7 +339,7 @@ const forgotPassword = async (req, res) => {
         ).trim().replace(/\/+$/, "");
 
         const resetUrl =
-            `${frontendUrl}/Authentication/ResetPassword.html?token=${encodeURIComponent(resetToken)}`;
+            `${frontendUrl}/reset-password.html?token=${encodeURIComponent(resetToken)}`;
 
         console.log("🌐 FRONTEND_URL:", process.env.FRONTEND_URL);
         console.log("🔗 FINAL RESET URL:", resetUrl);

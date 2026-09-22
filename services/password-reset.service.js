@@ -1,4 +1,4 @@
-const { sendEmail } = require("../utils/email");
+const { sendEmail } = require("./email");
 
 const escapeHtml = (value) =>
     String(value)

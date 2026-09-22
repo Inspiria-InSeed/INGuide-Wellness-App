@@ -48,9 +48,10 @@ startReminderScheduler();
 // ================================
 
 // Adjust this path if your folder structure is different
-const frontendPath = path.join(__dirname, "../../");
+const frontendPath = path.join(__dirname, "frontend");
 
 app.use(express.static(frontendPath));
+app.use(express.static(__dirname));
 
 // ================================
 // API Routes
@@ -85,10 +86,7 @@ app.use("/api/chat", chatRoutes);
 // Backend Test Route
 // ================================
 app.get("/", (req, res) => {
-    res.json({
-        success: true,
-        message: "Wellness App Backend is running"
-    });
+  res.sendFile(path.join(frontendPath, "index.html"));
 });
 
 module.exports = app;
